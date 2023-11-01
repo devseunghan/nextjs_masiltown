@@ -481,6 +481,10 @@ const TextArea = styled.textarea`
 const Select = styled.select`
   height: 32px;
   border: 1px solid #dfdfdf;
+  border-radius: 0;
+  font-size: 13px;
+  color: #000000;
+  background-color: white;
   margin-left: 2px;
   padding-left: 8px
 `
