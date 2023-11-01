@@ -11,6 +11,7 @@ import client from "../graphql/apollo-client";
 import Link from "next/link";
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 interface Response {
   campusList: Item[]
@@ -260,8 +261,14 @@ export default function Signup() {
 
   return (
     <>
+      <Head>
+        <title>회원가입</title>
+        <meta name="description" content="마실타운의 멤버가 되어주세요." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
       <Container>
-        <Header>멤버가입을 위해<br/>정보를 입력해주세요.</Header>
+        <Header>회원가입을 위해<br/>정보를 입력해주세요.</Header>
 
         <form>
           <ColWrapper>
@@ -404,11 +411,11 @@ export default function Signup() {
             <TextArea rows={6} placeholder="지원동기는 최소 30자 이상으로 작성해주세요." onChange={handleMotivationChange}></TextArea>
             <Gap height="28px"/>
 
-            <SubmitButton type="button" onClick={handleSubmitClick}>멤버등록</SubmitButton>
+            <SubmitButton type="button" onClick={handleSubmitClick}>회원가입</SubmitButton>
             <Gap height="12px"/>
             
             <LoginBlock>
-              <LoginGuide>이미 마실타운의 멤버이신가요?</LoginGuide>
+              <LoginGuide>이미 마실타운의 회원이신가요?</LoginGuide>
               <Link href='/'>
                 <HyperLink>홈으로</HyperLink>
               </Link>

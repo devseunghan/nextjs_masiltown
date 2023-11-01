@@ -3,11 +3,18 @@ import { Container } from "../components/layout/Layout"
 import completeAnimation from "../public/img/lottie/completeAnimation.json"
 import Lottie from "react-lottie-player"
 import Link from "next/link"
+import Head from "next/head"
 
 
 export default function Main() {
   return (
     <>
+      <Head>
+        <title>마실타운</title>
+        <meta name="description" content="마실타운에서 즐거운 교류를 만들어봐요!" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      
       <Container>
         <Wrapper>
         <Lottie
