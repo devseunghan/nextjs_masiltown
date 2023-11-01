@@ -35,7 +35,7 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  max-width: 600px;
+  max-width: 480px;
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;

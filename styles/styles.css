@@ -1,0 +1,23 @@
+:root {
+  --background: #f1f1f1;
+  --lightBackground: #f8f8f8;
+  --stroke: #dfdfdf;
+  --disable: #cecece;
+  --highlight: #fff0b9;
+  
+  --grey01: #383838;
+  --grey02: #575757;
+  --grey03: #aaaaaa;
+  --grey04: #e6e6e6;
+  --grey05: #888888;
+  
+  --point01: #cd5858;
+  --point02: #58b8cd;
+  --point03: #7d58cd;
+  --point04: #a1cd58;
+  
+  --point01b: #f5e9e9;
+  --point02b: #e9ecf5;
+  --point03b: #f2e9f5;
+  --point04b: #e9f5ef;
+}
