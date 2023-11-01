@@ -20,23 +20,24 @@ export default function MiddleBlock({ title, content, button }: MiddleBlockProps
 
   return (
     <MiddleBlockSection>
-      <Slide direction="up">
-        <Row justify="center" align="middle">
-          <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24}>
-              <h2>{title}</h2>
-              <Content>{content}</Content>
-              <Link href="/signup">
-                <a>
-                  <Button>
-                    {button}
-                  </Button>
-                </a>
-              </Link>
-            </Col>
-          </ContentWrapper>
-        </Row>
-      </Slide>
+      <Row justify="center" align="middle">
+        <ContentWrapper>
+          <Col lg={24} md={24} sm={24} xs={24}>
+            <h2>{title}</h2>
+            <Content>{content}</Content>
+            <Link href="/signup">
+              <a>
+                <Button>
+                  {button}
+                </Button>
+              </a>
+            </Link>
+          </Col>
+        </ContentWrapper>
+      </Row>
+      {/* <Slide direction="up">
+        
+      </Slide> */}
     </MiddleBlockSection>
   );
 };

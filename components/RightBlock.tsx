@@ -15,33 +15,34 @@ export default function RightBlock({ title, content, button, icon, id }: Content
 
   return (
     <RightBlockContainer>
-      <Fade direction="right">
-        <Row justify="space-between" align="middle" id={id}>
-          <Col lg={11} md={11} sm={11} xs={24}>
-            <ContentWrapper>
-              <h2>{title}</h2>
-              <Content>{content}</Content>
-              {/* <ButtonWrapper>
-                {typeof button === "object" &&
-                  button.map((item: any, id: number) => {
-                    return (
-                      <Button
-                        key={id}
-                        color={item.color}
-                        onClick={() => scrollTo("about")}
-                      >
-                        {item.title}
-                      </Button>
-                    );
-                  })}
-              </ButtonWrapper> */}
-            </ContentWrapper>
-          </Col>
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <ImgIcon src={icon} width="100%" height="100%" />
-          </Col>
-        </Row>
-      </Fade>
+      <Row justify="space-between" align="middle" id={id}>
+        <Col lg={11} md={11} sm={11} xs={24}>
+          <ContentWrapper>
+            <h2>{title}</h2>
+            <Content>{content}</Content>
+            {/* <ButtonWrapper>
+              {typeof button === "object" &&
+                button.map((item: any, id: number) => {
+                  return (
+                    <Button
+                      key={id}
+                      color={item.color}
+                      onClick={() => scrollTo("about")}
+                    >
+                      {item.title}
+                    </Button>
+                  );
+                })}
+            </ButtonWrapper> */}
+          </ContentWrapper>
+        </Col>
+        <Col lg={11} md={11} sm={12} xs={24}>
+          <ImgIcon src={icon} width="100%" height="100%" />
+        </Col>
+      </Row>
+      {/* <Fade direction="right">
+        
+      </Fade> */}
     </RightBlockContainer>
   );
 };

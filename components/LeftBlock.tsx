@@ -10,33 +10,34 @@ export default function LeftContentBlock({
 }: ContentBlockProps) {
   return (
     <LeftContentSection>
-      <Fade direction="left">
-        <Row justify="space-between" align="middle" id={id}>
-          <Col lg={11} md={11} sm={12} xs={24}>
-            <ImgIcon src={icon} width="100%" height="100%" />
-          </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
-            <ContentWrapper>
-              <h2>{title}</h2>
-              <Content>{content}</Content>
-              <ServiceWrapper>
-                <Row justify="space-between">
-                  {typeof section === "object" &&
-                    section.map((item: any, id: number) => {
-                      return (
-                        <Col key={id} span={11}>
-                          <ImgIcon src={item.icon} width="60px" height="60px" />
-                          <MinTitle>{item.title}</MinTitle>
-                          <MinPara>{item.content}</MinPara>
-                        </Col>
-                      );
-                    })}
-                </Row>
-              </ServiceWrapper>
-            </ContentWrapper>
-          </Col>
-        </Row>
-      </Fade>
+      <Row justify="space-between" align="middle" id={id}>
+        <Col lg={11} md={11} sm={12} xs={24}>
+          <ImgIcon src={icon} width="100%" height="100%" />
+        </Col>
+        <Col lg={11} md={11} sm={11} xs={24}>
+          <ContentWrapper>
+            <h2>{title}</h2>
+            <Content>{content}</Content>
+            <ServiceWrapper>
+              <Row justify="space-between">
+                {typeof section === "object" &&
+                  section.map((item: any, id: number) => {
+                    return (
+                      <Col key={id} span={11}>
+                        <ImgIcon src={item.icon} width="60px" height="60px" />
+                        <MinTitle>{item.title}</MinTitle>
+                        <MinPara>{item.content}</MinPara>
+                      </Col>
+                    );
+                  })}
+              </Row>
+            </ServiceWrapper>
+          </ContentWrapper>
+        </Col>
+      </Row>
+      {/* <Fade direction="left">
+        
+      </Fade> */}
     </LeftContentSection>
   );
 };
