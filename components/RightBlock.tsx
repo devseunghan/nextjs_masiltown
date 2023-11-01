@@ -2,8 +2,7 @@ import { Row, Col } from "antd";
 import { Fade } from "react-awesome-reveal";
 import styled from "styled-components";
 import { ContentBlockProps } from "./ContentBlock";
-import Button from "./Button";
-import SvgIcon from "./SvgIcon";
+import ImgIcon from "./ImgIcon";
 
 export default function RightBlock({ title, content, button, icon, id }: ContentBlockProps) {
 
@@ -20,9 +19,9 @@ export default function RightBlock({ title, content, button, icon, id }: Content
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{title}</h6>
+              <h2>{title}</h2>
               <Content>{content}</Content>
-              <ButtonWrapper>
+              {/* <ButtonWrapper>
                 {typeof button === "object" &&
                   button.map((item: any, id: number) => {
                     return (
@@ -35,11 +34,11 @@ export default function RightBlock({ title, content, button, icon, id }: Content
                       </Button>
                     );
                   })}
-              </ButtonWrapper>
+              </ButtonWrapper> */}
             </ContentWrapper>
           </Col>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <ImgIcon src={icon} width="100%" height="100%" />
           </Col>
         </Row>
       </Fade>
@@ -62,6 +61,8 @@ const RightBlockContainer = styled.section`
 
 const Content = styled.p`
   margin: 1.5rem 0 2rem 0;
+  font-size: 16px;
+  font-weight: 400;
 `;
 
 const ContentWrapper = styled.div`

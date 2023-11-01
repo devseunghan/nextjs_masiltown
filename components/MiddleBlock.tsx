@@ -24,7 +24,7 @@ export default function MiddleBlock({ title, content, button }: MiddleBlockProps
         <Row justify="center" align="middle">
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <h6>{title}</h6>
+              <h2>{title}</h2>
               <Content>{content}</Content>
               <Link href="/signup">
                 <a>
@@ -55,6 +55,8 @@ const MiddleBlockSection = styled.section`
 
 const Content = styled.p`
   padding: 0.75rem 0 0.75rem;
+  font-size: 16px;
+  font-weight: 400;
 `;
 
 const ContentWrapper = styled.div`

@@ -1,13 +1,14 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "같이 커피 마시며 새로운 어울림을 만들어요",
+  "text": "마실타운은, 평범하지만 서로 다른 다양한 장점과 경험들을 가진 멤버들이 모여 더 좋은 어울림을 만들어 갈 수 있도록 함께 하고 있어요!",
   "button": [
     {
-      "title": "Get started"
+      "title": "소개 더보기",
+      "color": "#383838"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "후기",
+      "color": "#383838"
     }
   ]
 }

@@ -9,6 +9,7 @@ import AboutContent from "../content/AboutContent.json";
 import MissionContent from "../content/MissionContent.json";
 import ProductContent from "../content/ProductContent.json";
 import LandingContainer from '../components/LandingContainer'
+import ImgIcon from '../components/ImgIcon';
 
 export default function Home() {
   return (
@@ -21,12 +22,14 @@ export default function Home() {
 
       <LandingContainer>
         <ScrollToTop />
+        <div style={{height:'2.5rem'}}/>
+        <ImgIcon width='125px' height='30px' src='logo.png'/>
         <ContentBlock
           type="right"
           title={IntroContent.title}
           content={IntroContent.text}
           button={IntroContent.button}
-          icon="developer.svg"
+          icon="title_01.png"
           id="intro"
         />
         <MiddleBlock
@@ -39,21 +42,21 @@ export default function Home() {
           title={AboutContent.title}
           content={AboutContent.text}
           section={AboutContent.section}
-          icon="graphs.svg"
+          icon="title_02.png"
           id="about"
         />
         <ContentBlock
           type="right"
           title={MissionContent.title}
           content={MissionContent.text}
-          icon="product-launch.svg"
+          icon="title_03.png"
           id="mission"
         />
         <ContentBlock
           type="left"
           title={ProductContent.title}
           content={ProductContent.text}
-          icon="waving.svg"
+          icon="title_04.png"
           id="product"
         />
       </LandingContainer>

@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import styled from "styled-components";
 import { ContentBlockProps } from "./ContentBlock";
 import SvgIcon from "./SvgIcon";
+import ImgIcon from "./ImgIcon";
 
 export default function LeftContentBlock({
   icon, title, content, section, id
@@ -12,11 +13,11 @@ export default function LeftContentBlock({
       <Fade direction="left">
         <Row justify="space-between" align="middle" id={id}>
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <ImgIcon src={icon} width="100%" height="100%" />
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{title}</h6>
+              <h2>{title}</h2>
               <Content>{content}</Content>
               <ServiceWrapper>
                 <Row justify="space-between">
@@ -24,7 +25,7 @@ export default function LeftContentBlock({
                     section.map((item: any, id: number) => {
                       return (
                         <Col key={id} span={11}>
-                          <SvgIcon src={item.icon} width="60px" height="60px" />
+                          <ImgIcon src={item.icon} width="60px" height="60px" />
                           <MinTitle>{item.title}</MinTitle>
                           <MinPara>{item.content}</MinPara>
                         </Col>
@@ -51,6 +52,8 @@ const LeftContentSection = styled.section`
 
 const Content = styled.p`
   margin: 1.5rem 0 2rem 0;
+  font-size: 16px;
+  font-weight: 400;
 `;
 
 const ContentWrapper = styled.div`
@@ -79,4 +82,6 @@ const MinTitle = styled.h6`
 
 const MinPara = styled.p`
   font-size: 13px;
+  font-weight: 400;
+  color: #575757;
 `;

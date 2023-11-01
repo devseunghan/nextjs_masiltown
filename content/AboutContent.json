@@ -1,16 +1,16 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "편하게 어울리며, 꾸준히 좋은 인맥을 쌓아요",
+  "text": "바쁜 학기 중에도 조금의 여유 일정이 있다면, 다양한 친구들을 만나보고 이야기할 수 있는 모임에 참여해서, 인맥도 쌓고 즐거운 시간도 함께 보낼 수 있어요!",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+      "title": "함께하면 더 즐거운 사이",
+      "content": "의미 없는 온라인 친구가 아닌, 커피도 마시고 맛집도 갈 수 있는 친구들과 함께 좀 더 즐거운 대학생활을 만들어요!",
+      "icon": "speaker.png"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "한 학기에 새 인맥 50명 만들기",
+      "content": "1-2시간 정도의 짧은 커피타임을 활용해서, 1주에 한번씩, 잠깐의 공강시간만 활용해도, 매 학기 50명의 다양한 전공의 친구들을 새로 만들 수 있어요!",
+      "icon": "speaker.png"
     }
   ]
 }
